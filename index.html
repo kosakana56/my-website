@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>こさかな | 自己紹介</title>
+  <style>
+    :root {
+      --bg-color: #0d0d0f;
+      --card-bg: #151518;
+      --inner-bg: #1c1c21;
+      --text-main: #f3f1ed;
+      --text-sub: #a39e93;
+      --gold: #c6a868;
+      --gold-dim: rgba(198, 168, 104, 0.25);
+      --gold-subtle: rgba(198, 168, 104, 0.08);
+      --border: #26262b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.85;
+      padding: 3rem 1.25rem;
+      letter-spacing: 0.03em;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--gold);
+      border-radius: 12px;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-bottom: 1.75rem;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: var(--gold-subtle);
+      color: var(--gold);
+      border: 1px solid var(--gold-dim);
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      padding: 0.35rem 1.1rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: var(--text-main);
+    }
+
+    main {
+      display: grid;
+      gap: 1.75rem;
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.75rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.35rem;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      color: var(--text-main);
+      font-size: 0.96rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlight-box {
+      background-color: var(--inner-bg);
+      border-left: 2px solid var(--gold);
+      padding: 1rem 1.25rem;
+      border-radius: 0 6px 6px 0;
+      font-weight: 500;
+      color: var(--text-main);
+      letter-spacing: 0.06em;
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .schedule-item {
+      background-color: var(--inner-bg);
+      border: 1px solid var(--border);
+      padding: 1.1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .schedule-label {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      letter-spacing: 0.1em;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .schedule-time {
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--text-sub);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.5rem 0.9rem;
+      }
+
+      header {
+        padding: 2.25rem 1.25rem;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .two-col-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .card {
+        padding: 1.5rem 1.25rem;
+      }
+
+      .schedule-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">大学1年生・一人暮らし</span>
+      <h1>こさかな</h1>
+    </header>
+
+    <main>
+      <div class="two-col-grid">
+        <section class="card">
+          <h2>今学んでいること</h2>
+          <div class="highlight-box">
+            生成AIについて
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>今後の目標</h2>
+          <div class="highlight-box">
+            就職すること
+          </div>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>力を入れていること（早寝早起き）</h2>
+        <p>
+          大学1年生で一人暮らしを始めた当初、家事が溜まって生活リズムが崩れそうになることが課題でした。
+        </p>
+        <p>
+          そこで、家事は寝る前や溜まる前にサッと終わらせることを徹底し、毎日の就寝・起床時間を固定しました。
+        </p>
+
+        <div class="schedule-grid">
+          <div class="schedule-item">
+            <span class="schedule-label">就寝時間</span>
+            <span class="schedule-time">22:30</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-label">起床時間</span>
+            <span class="schedule-time">6:30</span>
+          </div>
+        </div>
+
+        <p>
+          家事を速やかに片付ける仕組みと早寝早起きを続けた結果、生活リズムが綺麗に整い、趣味や勉強に使える時間を多く増やすことができました。
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; こさかな</p>
+    </footer>
+  </div>
+</body>
+</html>
